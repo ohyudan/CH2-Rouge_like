@@ -5,7 +5,7 @@ class MonsterFactory {
     // 추후 액티브를 이용해 각자 스킬 추가
     this._stage;
     this._MonsterNamelist = [
-      //stage x hp x  // stage x att x 2
+      //stage x hp x 6~10 // stage x att x 1~2
       { name: "좀비", stagemin: 1, stageMax: 5, hp: 2, attvalue: 3 }, //5
       { name: "스켈레톤", stagemin: 1, stageMax: 5, hp: 3, attvalue: 3 }, //6
       { name: "들개", stagemin: 1, stageMax: 3, hp: 1, attvalue: 3 }, //4
@@ -24,8 +24,8 @@ class MonsterFactory {
     });
     let random_Int = ramdom(0, list.length);
     let result = new Monster(
-      list[random_Int].hp * stage * 10,
-      list[random_Int].attvalue * stage * 2,
+      list[random_Int].hp * stage * ramdom(6, 10),
+      list[random_Int].attvalue * stage * (1, 2),
       list[random_Int].name
     );
     return result;
