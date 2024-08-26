@@ -1,3 +1,7 @@
+## 도전 기능 가이드
+
+![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/83c75a39-3aba-4ba4-a792-7aefe4b07895/8875b6f7-455b-41ee-a847-50ea6d915737/image.png)
+
 ### 1. 확률 로직 적용
 
 - 연속 공격, 방어, 도망치기
